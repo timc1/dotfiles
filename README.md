@@ -1,5 +1,7 @@
 ### ⚪️ Minimal dotfile setup
 
+These configs can be used solely with vim — simply remove the iTerm2 config. I've found this setup to work quite well by swapping between VSCode and vim. [Ping me](https://twitter.com/timcchang) if you have questions or suggestions!
+
 ### Setup
 
 From a clean OS:
