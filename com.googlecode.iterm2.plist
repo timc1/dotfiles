@@ -210,7 +210,7 @@
 	<key>NSWindow Frame NSNavPanelAutosaveName</key>
 	<string>752 618 799 448 0 0 2304 1273 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>572 0 1732 1273 0 0 2304 1273 </string>
+	<string>558 0 1746 1273 0 0 2304 1273 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>304 152 570 488 0 0 2304 1273 </string>
 	<key>New Bookmarks</key>
@@ -1977,7 +1977,7 @@
 	<key>NoSyncInstallationId</key>
 	<string>A94CBC24-63E8-4DF6-B2DE-AD478806E746</string>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>13</integer>
+	<integer>14</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -2711,7 +2711,7 @@
 	<key>NoSyncTipOfTheDayEligibilityBeganTime</key>
 	<real>613137330.47659695</real>
 	<key>PrefsCustomFolder</key>
-	<string>/Users/tim/Documents</string>
+	<string>/Users/tim/Desktop/dotfiles</string>
 	<key>SUEnableAutomaticChecks</key>
 	<true/>
 	<key>SUFeedAlternateAppNameKey</key>
