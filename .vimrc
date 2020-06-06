@@ -23,8 +23,7 @@ Plugin 'jiangmiao/auto-pairs'
 
 " .mdx syntax highlighting
 " Plugin 'findango/vim-mdx'
-" Plugin 'owickstrom/vim-colors-paramount'
-Plugin 'ewilazarus/preto'
+Plugin 'cocopon/iceberg.vim'
 
 " prettier code formatting
 Plugin 'prettier/vim-prettier', {
@@ -68,11 +67,12 @@ set rnu
 " always show sign columns to avoid jumpiness
 set signcolumn=yes
 
+set termguicolors
 " enable nord colorscheme
 syntax enable
 set background=dark
 " colorscheme nord
-colorscheme preto
+colorscheme iceberg
 set guifont=Input\ Mono:h11
 
 " tabs
