@@ -23,6 +23,8 @@ alias checkport='netstat -vanp tcp | grep'
 alias ls='ls -GFh'
 alias ll='ls -1a'
 alias ..='cd ../'
+alias gbb='git branches'
+alias gs='git status'
 
 if [[ -a ~/.abstract ]]; then
   source ~/.abstract

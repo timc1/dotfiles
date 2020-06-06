@@ -4,6 +4,11 @@
 
 From a clean OS:
 
+- Fuzzy search & autocomplete in terminal
+- `git branches` to swap branches super quickly 
+- `git diff` for super nice diffs 
+- Simple, all you need vim configs to get work done 
+
 ```
   brew install node
   brew install cmake
@@ -25,6 +30,9 @@ From a clean OS:
   ln -s path/to/dotfile/.zshrc ~/.zshrc
   ln -s path/to/dotfile/.zprofile ~/.zprofile
   ln -s path/to/dotfile/.vimrc ~/.vimrc
+
+  // Git
+  ln -s path/to/dotfile/.gitconfig ~/.gitconfig
 ```
 
 Restart terminal 🎉
