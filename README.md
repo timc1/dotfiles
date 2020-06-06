@@ -1,4 +1,8 @@
-#### Setup
+### ⚪️ Minimal dotfile setup
+
+### Setup
+
+From a clean OS:
 
 ```
   brew install node
@@ -22,3 +26,5 @@
   ln -s path/to/dotfile/.zprofile ~/.zprofile
   ln -s path/to/dotfile/.vimrc ~/.vimrc
 ```
+
+Restart terminal 🎉
