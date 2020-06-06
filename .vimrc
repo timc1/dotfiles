@@ -195,10 +195,5 @@ ca bp bprev
 nnoremap <C-e> 5<C-e>
 nnoremap <C-y> 5<C-y>
 
-" abstract goodies
-runtime! env/*.vim
-map <leader>s :vsp %:h/style.scss<CR>
-map <leader>c :vsp %:h/connector.js<CR>
-
 " default grep
 set grepprg=ag\ -i\ --vimgrep\ --ignore={vendor,\"*.lock*\",\"*karma*\",\"*flow*\",\"*svg*\",flow-typed}
