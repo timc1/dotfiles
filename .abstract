@@ -1,0 +1,6 @@
+alias yws="yarn web start"
+alias yds="yarn desktop start"
+alias ycs="yarn core start"
+alias ywf="yarn web flow"
+alias ydf="yarn desktop flow"
+alias ycf="yarn core flow"
