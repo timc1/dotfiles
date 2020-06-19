@@ -102,15 +102,22 @@ autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 " quit vim if nerdtree is the last buffer
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+" explicitly open nerdtree in the directory of the current file
+map <leader>r :NERDTreeFind<cr>
 " open nerdtree in the directory of the current file (or root of the directory if no file is open)
 " and close if nerdtree is already open
 nmap <silent> <leader>t :call NERDTreeToggleInCurDir()<cr>
+
 function! NERDTreeToggleInCurDir()
-  if (exists("t:NERDTreeBufName") && bufwinnr(t:NERDTreeBufName) != -1)
+  if (IsNERDTreeOpen())
     exe ":NERDTreeClose"
   else
     exe ":NERDTreeFind"
   endif
+endfunction
+
+function! IsNERDTreeOpen()
+  return exists("t:NERDTreeBufName") && (bufwinnr(t:NERDTreeBufName) != -1)
 endfunction
 
 " YouCompleteMe
