@@ -95,10 +95,23 @@ let g:airline_skip_empty_sections=1
 let g:netrw_list_hide='.*\.swp$,\.DS_Store'
 let g:netrw_banner=0
 
+" nerdtree config
 let g:NERDTreeDirArrowExpandable = '▸'
 let g:NERDTreeDirArrowCollapsible = '▾'
 autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
+" quit vim if nerdtree is the last buffer
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+" open nerdtree in the directory of the current file (or root of the directory if no file is open)
+" and close if nerdtree is already open
+nmap <silent> <leader>t :call NERDTreeToggleInCurDir()<cr>
+function! NERDTreeToggleInCurDir()
+  if (exists("t:NERDTreeBufName") && bufwinnr(t:NERDTreeBufName) != -1)
+    exe ":NERDTreeClose"
+  else
+    exe ":NERDTreeFind"
+  endif
+endfunction
 
 " YouCompleteMe
 " close preview after insertion mode
