@@ -1,14 +1,18 @@
 ### ⚪️ Minimal dotfile setup
 
-These configs can be used solely with vim — simply remove the iTerm2 config. I've found this setup to work quite well by swapping between VSCode and vim. [Ping me](https://twitter.com/timcchang) if you have questions or suggestions!
+These configs can be used solely with vim — simply remove the iTerm2 config. I've found this setup to work quite well by swapping between VSCode and vim (or just vim!). [Ping me](https://twitter.com/timcchang) if you have questions or suggestions!
 
-### Setup
+<img width="1552" alt="Screen Shot 2020-06-19 at 4 32 42 PM" src="https://user-images.githubusercontent.com/12195101/85177657-8eb87a00-b24a-11ea-8779-02ee260b7d11.png">
 
-From a clean OS:
-
+### Features
 - Fuzzy search & autocomplete in terminal
 - `git branches` to swap branches super quickly 
 - `git diff` for super nice diffs 
+- go to current buffer's location in the repository's tree
+
+### Setup
+From a clean OS:
+
 - Simple, all you need vim configs to get work done 
 
 ```
