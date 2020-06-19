@@ -55,6 +55,9 @@ Plugin 'junegunn/fzf.vim'
 " multi cursors
 Plugin 'terryma/vim-multiple-cursors'
 
+" navigate directory in vim
+Plugin 'scrooloose/nerdtree'
+
 " all plugins must be added before the following line
 call vundle#end()
 filetype plugin indent on
@@ -91,6 +94,11 @@ let g:airline_skip_empty_sections=1
 " netrw hide mac files
 let g:netrw_list_hide='.*\.swp$,\.DS_Store'
 let g:netrw_banner=0
+
+let g:NERDTreeDirArrowExpandable = '▸'
+let g:NERDTreeDirArrowCollapsible = '▾'
+autocmd StdinReadPre * let s:std_in=1
+autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 
 " YouCompleteMe
 " close preview after insertion mode
