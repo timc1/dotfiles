@@ -5,7 +5,7 @@
 	required = true
 [user]
 	name = Tim
-	email = timchang.tcc@gmail.com
+	email = timothychang94@gmail.com
 [alias]
   branches = "!sh -c \"git checkout $(git for-each-ref --sort='-authordate:iso8601' --format=' %(authordate:relative)%09%(refname:short)' refs/heads | fzf | cut -f2)\""
 [core]
