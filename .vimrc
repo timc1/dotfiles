@@ -58,6 +58,9 @@ Plugin 'terryma/vim-multiple-cursors'
 " navigate directory in vim
 Plugin 'scrooloose/nerdtree'
 
+" open in github
+Plugin 'timc1/vim-gh-line'
+
 " all plugins must be added before the following line
 call vundle#end()
 filetype plugin indent on
