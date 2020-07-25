@@ -9,9 +9,6 @@ call vundle#begin()
 " Vundle manages Vundle 😀
 Plugin 'VundleVim/Vundle.vim'
 
-" improved folder structure
-Plugin 'tpope/vim-vinegar'
-
 " syntax highlighting
 Plugin 'sheerun/vim-polyglot'
 
@@ -20,10 +17,6 @@ Plugin 'styled-components/vim-styled-components'
 
 " brackets
 Plugin 'jiangmiao/auto-pairs'
-
-" .mdx syntax highlighting
-" Plugin 'findango/vim-mdx'
-Plugin 'cocopon/iceberg.vim'
 
 " prettier code formatting
 Plugin 'prettier/vim-prettier', {
@@ -44,9 +37,6 @@ Plugin 'tpope/vim-unimpaired'
 
 " comments
 Plugin 'tpope/vim-commentary'
-
-" git wrapper
-Plugin 'tpope/vim-fugitive'
 
 " fuzzy finder
 Plugin 'junegunn/fzf'
@@ -73,13 +63,10 @@ set rnu
 " always show sign columns to avoid jumpiness
 set signcolumn=yes
 
-set termguicolors
-" enable nord colorscheme
+" set termguicolors
 syntax enable
 set background=dark
-" colorscheme nord
-colorscheme iceberg
-set guifont=Input\ Mono:h11
+colorscheme solarized
 
 " tabs
 set tabstop=2
@@ -129,9 +116,6 @@ let g:ycm_autoclose_preview_window_after_insertion = 1
 let g:ycm_autoclose_preview_window_after_completion = 1
 " remove YCM's linter because we're using ale
 let g:ycm_show_diagnostics_ui = 0
-
-" vim-ale
-" change error and warning symbols
 
 " fzf
 " map ctrl+p to :Files
@@ -216,7 +200,6 @@ set backupcopy=yes
 " fzf
 " map ctrl+p to :Files
 nnoremap <c-p> :Files<CR>
-nnoremap <c-b> :Buffer<CR>
 
 " map bn and bp to switch buffers
 ca bn bnext
