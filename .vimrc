@@ -51,6 +51,9 @@ Plugin 'scrooloose/nerdtree'
 " open in github
 Plugin 'timc1/vim-gh-line'
 
+" colorscheme
+Plugin 'owickstrom/vim-colors-paramount'
+
 " all plugins must be added before the following line
 call vundle#end()
 filetype plugin indent on
@@ -63,10 +66,10 @@ set rnu
 " always show sign columns to avoid jumpiness
 set signcolumn=yes
 
-" set termguicolors
+set termguicolors
 syntax enable
 set background=dark
-colorscheme solarized
+colorscheme paramount
 
 " tabs
 set tabstop=2
