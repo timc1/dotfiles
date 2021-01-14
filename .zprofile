@@ -37,10 +37,8 @@ function weather() {
   fi
 }
 
-/**
- * `gcr` cleans up git repositories by deleting branches that are fully merged into `origin/main`
- * reference: https://gist.github.com/robmiller/5133264
- */
+# https://gist.github.com/robmiller/5133264
+# `gcr`, "git-clean-repo" cleans up git repositories by deleting branches that are fully merged into `origin/main`
 function gcr() {
   git checkout main &> /dev/null
 
